@@ -27,3 +27,105 @@ File -> Swift Packages -> Add Package Dependency
 
 https://github.com/Aiur3908/AYPopupPickerView
 ```
+
+## Usage
+
+### AYPopupPickerView
+
+```Swift
+let itemsTitle = ["Apple", "Avocado", "Banana", "Cherry", "Coconut", "Grape"]
+let popupPickerView = AYPopupPickerView()
+popupPickerView.display(itemTitles: itemsTitle, doneHandler: {
+    let selectedIndex = popupPickerView.pickerView.selectedRow(inComponent: 0)
+    print(itemsTitle[selectedIndex])
+})
+```
+
+### AYPopupDatePickerView
+
+```Swift
+let popupDatePickerView = AYPopupDatePickerView()
+popupDatePickerView.display(defaultDate: Date(), doneHandler: { date in
+    print(date)
+})
+```
+
+## Custom 
+
+### AYPopupPickerView
+
+```Swift
+public var pickerView: UIPickerView!
+public var doneButton: UIButton!
+public var cancelButton: UIButton!
+public var headerView: UIView!
+```
+### AYPopupDatePickerView
+
+```Swift
+public var datePickerView: UIDatePicker!
+public var doneButton: UIButton!
+public var cancelButton: UIButton!
+public var headerView: UIView!
+```
+#### Example
+
+```Swift
+let customPopupPickerView = AYPopupPickerView()
+customPopupPickerView.headerView.backgroundColor = UIColor.green
+customPopupPickerView.doneButton.setTitle("OK", for: .normal)
+customPopupPickerView.doneButton.setTitleColor(.red, for: .normal)
+customPopupPickerView.cancelButton.setTitleColor(.blue, for: .normal)
+```
+
+```Swift
+let customPopupDatePickerView = AYPopupDatePickerView()
+customPopupDatePickerView.datePickerView.datePickerMode = .date
+```
+
+You can implementation UIPickerViewDataSource & UIPickerViewDelegate in your ViewController
+
+```Swift
+class ViewController: UIViewController {
+    
+    let popupPickerView = AYPopupPickerView()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        popupPickerView.pickerView.dataSource = self
+        popupPickerView.pickerView.delegate = self
+    }
+
+    @IBAction func display(_ sender: Any) {
+        popupPickerView.display(doneHandler: {
+            
+        })
+    }
+}
+
+extension ViewController: UIPickerViewDataSource & UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 2
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 5
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return "\(row)"
+    }
+}
+```
+
+### Author
+
+Jerry You
+Email: Aiur3908@gmail.com
+
+### LICENSE
+MIT
+
+
+
+
