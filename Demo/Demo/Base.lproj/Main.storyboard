@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nde-M9-3XY">
+                                <rect key="frame" x="30" y="74" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.74901960779999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F9t-SA-MCV"/>
+                                </constraints>
+                                <state key="normal" title="Single Componet PickerView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="singleComponetPickerViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKx-ec-pdJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fb-lG-Mc2">
+                                <rect key="frame" x="30" y="154" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.74901960779999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6MZ-Tb-R6L"/>
+                                </constraints>
+                                <state key="normal" title="Multiple Component PickerView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="multipleComponentPickerViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0so-sr-rZV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8z4-Ab-bZf">
+                                <rect key="frame" x="30" y="234" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.74901960779999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FLy-kJ-XHG"/>
+                                </constraints>
+                                <state key="normal" title="DatePickerView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="datePickerViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uqb-As-EVs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-wS-RwE">
+                                <rect key="frame" x="30" y="314" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.74901960779999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EIF-ge-OFK"/>
+                                </constraints>
+                                <state key="normal" title="Custom PopupPickerView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="customPopupPickerViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AS6-8u-Ndq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8z4-Ab-bZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0c3-CN-1Ki"/>
+                            <constraint firstItem="nde-M9-3XY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0y4-a6-0Eu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Azp-wS-RwE" secondAttribute="trailing" constant="30" id="3Yx-yG-7FW"/>
+                            <constraint firstItem="nde-M9-3XY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="R4x-yX-RoN"/>
+                            <constraint firstItem="8z4-Ab-bZf" firstAttribute="top" secondItem="9fb-lG-Mc2" secondAttribute="bottom" constant="30" id="XpH-Yp-fdF"/>
+                            <constraint firstItem="Azp-wS-RwE" firstAttribute="top" secondItem="8z4-Ab-bZf" secondAttribute="bottom" constant="30" id="eZg-hu-vog"/>
+                            <constraint firstItem="9fb-lG-Mc2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gd9-fS-NEN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nde-M9-3XY" secondAttribute="trailing" constant="30" id="gfT-gp-dXh"/>
+                            <constraint firstItem="Azp-wS-RwE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="haf-R6-1Oz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8z4-Ab-bZf" secondAttribute="trailing" constant="30" id="jEe-fP-eoQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9fb-lG-Mc2" secondAttribute="trailing" constant="30" id="sFf-wZ-AZy"/>
+                            <constraint firstItem="9fb-lG-Mc2" firstAttribute="top" secondItem="nde-M9-3XY" secondAttribute="bottom" constant="30" id="tth-fp-uKN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
