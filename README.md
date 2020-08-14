@@ -1,3 +1,3 @@
 # AYPopupPickerView
 
-A Pop-Up PickerView or DatePickerView
+A Popup PickerView or DatePickerView
