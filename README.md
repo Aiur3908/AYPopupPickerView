@@ -10,3 +10,20 @@ A Popup PickerView or DatePickerView
 [![License](https://img.shields.io/cocoapods/l/RxFlow.svg?style=flat)](https://cocoapods.org/pods/AYPopupPickerView)
 
 ![image](https://github.com/Aiur3908/AYPopupPickerView/blob/master/README/Demo.gif)
+
+## Installation
+
+#### CocoaPods
+```
+pod 'AYPopupPickerView'
+```
+#### Carthage
+```
+github "Aiur3908/AYPopupPickerView"
+```
+#### Swift Package Manager
+```
+File -> Swift Packages -> Add Package Dependency
+
+https://github.com/Aiur3908/AYPopupPickerView
+```
