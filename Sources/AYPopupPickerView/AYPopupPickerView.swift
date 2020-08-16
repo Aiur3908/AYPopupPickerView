@@ -99,10 +99,12 @@ public class AYPopupPickerView: UIView {
     
     @objc private func done() {
         doneHandler?()
+        doneHandler = nil
         dismissAnimation()
     }
     
     @objc private func cancel() {
+        doneHandler = nil
         dismissAnimation()
     }
     

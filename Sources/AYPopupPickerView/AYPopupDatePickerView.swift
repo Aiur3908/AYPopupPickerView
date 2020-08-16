@@ -97,10 +97,12 @@ public class AYPopupDatePickerView: UIView {
     
     @objc private func done() {
         doneHandler?(datePickerView.date)
+        doneHandler = nil
         dismissAnimation()
     }
      
     @objc private func cancel() {
+        doneHandler = nil
         dismissAnimation()
     }
     
