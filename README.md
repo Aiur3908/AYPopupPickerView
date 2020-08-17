@@ -28,6 +28,9 @@ File -> Swift Packages -> Add Package Dependency
 https://github.com/Aiur3908/AYPopupPickerView
 ```
 
+#### Manually
+Drag and drop Sources folder to your project.
+
 ## Usage
 
 ### AYPopupPickerView
