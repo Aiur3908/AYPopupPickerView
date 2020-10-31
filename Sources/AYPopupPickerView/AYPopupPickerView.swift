@@ -114,7 +114,7 @@ public class AYPopupPickerView: UIView {
         self.itemTitles = itemTitles
         self.doneHandler = doneHandler
         pickerView.reloadAllComponents()
-        pickerView.selectedRow(inComponent: defaultIndex)
+        pickerView.selectRow(defaultIndex, inComponent: 0, animated: true)
         addToKeyWindow()
         displayAnimation()
     }
