@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AYPopupPickerView"
-  spec.version      = "1.0"
+  spec.version      = "1.2"
   spec.summary      = "Pop-up PickerView or DatePickerView"
 
   # This description is used to generate tags and improve search results.
