@@ -127,7 +127,7 @@ Jerry You
 Email: Aiur3908@gmail.com
 
 ### LICENSE
-[MIT] (https://github.com/jobinsjohn/AYPopupPickerView/blob/master/LICENSE)
+[MIT] (blob/master/LICENSE)
 
 
 
