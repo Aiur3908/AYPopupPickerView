@@ -50,6 +50,9 @@ public class AYPopupDatePickerView: UIView {
         datePickerViewBottomConstraint.isActive = true
         datePickerView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         datePickerView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        if #available(iOS 13.4, *) {
+            datePickerView.preferredDatePickerStyle = .wheels
+        }
         datePickerView.backgroundColor = .white
      }
      
