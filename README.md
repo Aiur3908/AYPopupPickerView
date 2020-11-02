@@ -127,8 +127,7 @@ Jerry You
 Email: Aiur3908@gmail.com
 
 ### LICENSE
-MIT
-
+AYPopupPickerView is released under the MIT license. See [LICENSE](https://github.com/Aiur3908/AYPopupPickerView/blob/master/LICENSE) for details.
 
 
 
