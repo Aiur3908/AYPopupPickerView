@@ -29,7 +29,10 @@ https://github.com/Aiur3908/AYPopupPickerView
 ```
 
 #### Manually
-Drag and drop Sources folder to your project.
+```
+Drag and drop source folder to your project.
+
+```
 
 ## Usage
 
@@ -53,7 +56,7 @@ popupDatePickerView.display(defaultDate: Date(), doneHandler: { date in
 })
 ```
 
-## Custom 
+## Custom Implementation 
 
 ### AYPopupPickerView
 
@@ -123,7 +126,7 @@ extension ViewController: UIPickerViewDataSource & UIPickerViewDelegate {
 }
 ```
 
-## Default Select
+## To set a default item selected
 
 #### Single Component
 
@@ -148,6 +151,7 @@ Jerry You
 Email: Aiur3908@gmail.com
 
 ### LICENSE
+
 AYPopupPickerView is released under the MIT license. See [LICENSE](https://github.com/Aiur3908/AYPopupPickerView/blob/master/LICENSE) for details.
 
 
