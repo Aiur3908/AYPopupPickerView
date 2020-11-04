@@ -86,6 +86,8 @@ let customPopupDatePickerView = AYPopupDatePickerView()
 customPopupDatePickerView.datePickerView.datePickerMode = .date
 ```
 
+## Multiple Component
+
 You can implementation UIPickerViewDataSource & UIPickerViewDelegate in your ViewController
 
 ```Swift
@@ -119,6 +121,25 @@ extension ViewController: UIPickerViewDataSource & UIPickerViewDelegate {
         return "\(row)"
     }
 }
+```
+
+## Default Select
+
+#### Single Component
+
+```Swift
+popupPickerView.display(itemTitles: itemsTitle, defaultIndex: 1, doneHandler: {
+
+})
+```
+
+#### Multiple Component
+
+```Swift
+//defaultSelects: [(row: Int, component: Int)]
+popupPickerView.display(with: [(2,0), (1,1)], doneHandler: {
+
+})
 ```
 
 ### Author

@@ -119,8 +119,14 @@ public class AYPopupPickerView: UIView {
         displayAnimation()
     }
     
-    public func display(doneHandler: @escaping (() -> Void)) {
+    public func display(with defaultSelects: [(row: Int, component: Int)]? = nil, doneHandler: @escaping (() -> Void)) {
         self.doneHandler = doneHandler
+        pickerView.reloadAllComponents()
+        if let defaultSelects = defaultSelects {
+            for defaultSelect in defaultSelects {
+                pickerView.selectRow(defaultSelect.row, inComponent: defaultSelect.component, animated: false)
+            }
+        }
         addToKeyWindow()
         displayAnimation()
     }
