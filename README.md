@@ -150,6 +150,10 @@ popupPickerView.display(with: [(2,0), (1,1)], doneHandler: {
 Jerry You
 Email: Aiur3908@gmail.com
 
+### Contributing
+
+Pull requests, feature requests and bug reports are welcome 🚀
+
 ### LICENSE
 
 AYPopupPickerView is released under the MIT license. See [LICENSE](https://github.com/Aiur3908/AYPopupPickerView/blob/master/LICENSE) for details.
